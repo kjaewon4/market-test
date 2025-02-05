@@ -12,6 +12,16 @@ export default function Nav({ mode, setMode }) {
   return (
     <div className='Nav'>
       <a href="/create"
+        className={activeLink === 'LIST' ? 'active' : ''}
+        onClick={(event) => handleClick(event, 'LIST')}>전체상품
+      </a>
+      <span> | </span>
+       <a href="/create"
+        className={activeLink === 'COMMU' ? 'active' : ''}
+        onClick={(event) => handleClick(event, 'COMMU')}>커뮤니티
+      </a>
+      <span> | </span>
+      <a href="/create"
         className={activeLink === 'CREATE' ? 'active' : ''}
         onClick={(event) => handleClick(event, 'CREATE')}>상품 등록
       </a>

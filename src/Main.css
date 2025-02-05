@@ -1,10 +1,29 @@
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;  /* 가로 정렬 */
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 .titleBox{
     border-bottom: 1px solid black;
     padding-left: 20px;
+ 
 }
 
 .title{
     color: rgb(255, 115, 0);
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+
+}
+.title img{
+    width: 50px;
+
 }
 
 .Nav{
@@ -20,4 +39,18 @@
 .Nav a.active{
   color: rgb(255, 115, 0);
   font-weight: bold;
+}
+
+.Content{
+    display: flex;  /* 가로 정렬 */
+    flex-wrap: wrap; /* 화면이 작으면 자동 줄바꿈 */
+    gap: 10px; /* 아이템 간 간격 */
+    justify-content: center;
+}
+.contentBox{
+    width: 200px;
+    border: 1px solid black;
+}
+.Content img{
+    width: 100px;
 }
