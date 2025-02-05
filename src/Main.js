@@ -17,7 +17,7 @@ export default function Main() {
   ])
 
   // LIKE(찜목록), CREATE(상품 등록), LIST(전체 상품), COMMU(커뮤니티)...
-  const [mode, setMode] = useState('');
+  const [mode, setMode] = useState('LIST');
 
   console.log(mode);
   let content = null;
@@ -38,7 +38,7 @@ export default function Main() {
     <div className='container'>
       <div className='Main'>
         <div className='titleBox'>
-          <h2 className='title'><img src={logo} alt="로고" />당근</h2>
+          <h2 className='title'><img src={logo} alt="로고" />TEMTEMU</h2>
         </div>
 
         <Nav mode={mode} setMode={setMode}></Nav>

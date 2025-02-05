@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 export default function Nav({ mode, setMode }) {
-  const [activeLink, setActiveLink] = useState(''); // 활성화된 링크 상태 관리
+  const [activeLink, setActiveLink] = useState(mode); // 활성화된 링크 상태 관리
 
   const handleClick = (event, linkMode) => {
     event.preventDefault();

@@ -12,10 +12,12 @@ export default function Content({ items, setItems }) {
   const list = items.map((item) => (
     <div className='contentBox'>
       <img src={item.img} alt={item.title}></img>
-      <h3>{item.title}
-        <span onClick={() => toggleLike(item.id)}>{item.like ? <FaStar /> : <CiStar />}</span>
+      <h3 className='item-title' title={item.title}>{item.title}
       </h3>
-      <p>{item.price}원</p>
+      <h5 className='item-price'>        
+        {item.price}원
+        <span onClick={() => toggleLike(item.id)}>{item.like ? <FaStar /> : <CiStar />}</span>
+        </h5>
     </div>
   ))
   return (
